@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+<style>
+    .emg {
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        background-image: url("ewq.jfif");
+        background-size: cover;
+    }
+
+    .box1 {
+        height: 10vh;
+        width: 50%;
+        text-align: center;
+        color: white;
+        float: left;
+        font-family: serif;
+        text-align: center;
+        padding-top: 1%;
+    }
+
+    .divider1 {
+        height: 10vh;
+        width: 50%;
+        color: white;
+        float: left;
+        padding-top: 1%;
+    }
+
+    .box2 {
+        height: 70vh;
+        width: 100%;
+        color: white;
+        float: left;
+        padding-top: 10%;
+        font-family: sans-serif;
+    }
+
+    .button1 {
+
+        height: 7vh;
+        width: 19%;
+        color: white;
+        border: none;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 13px;
+        margin: 4px 2px;
+        border-radius: 38px;
+        background-color: rgb(149, 236, 61);
+        position: relative;
+        left: 15%;
+    }
+
+    .button2 {
+
+        height: 7vh;
+
+        color: black;
+        border: none;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 13px;
+        margin: 4px 2px;
+        border-radius: 38px;
+        background-color: white;
+        position: relative;
+        left: 15%;
+    }
+
+    .button3 {
+
+        height: 7vh;
+        width: 10%;
+        color: white;
+        border: none;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 13px;
+        margin: 4px 2px;
+        border-radius: 38px;
+        background-color: rgb(149, 236, 61);
+        position: relative;
+
+    }
+
+    .main {
+        background-color: rgb(213, 226, 231);
+        height: 70vh;
+        width: 100%;
+    }
+
+    .txt {
+        height: 5vh;
+        left: 45%;
+        right: 50%;
+        bottom: 10px;
+        width: 9%;
+        color: rgb(34, 49, 131);
+        position: relative;
+        padding-top: 2%;
+        border-bottom: 3px solid rgb(34, 49, 131);
+        ;
+    }
+
+    .boxs1 {
+        height: 25vh;
+        width: 15%;
+        background-color: white;
+        padding-top: 2%;
+        margin-top: 1%;
+        color: rgb(34, 49, 131);
+        text-align: center;
+        position: relative;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-bottom: 5%;
+
+    }
+
+    .boxs2 {
+        height: 25vh;
+        width: 15%;
+        background-color: white;
+        padding-top: 2%;
+        color: rgb(34, 49, 131);
+        margin-top: 1%;
+        text-align: center;
+        position: relative;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-bottom: 5%;
+
+    }
+
+    .boxs3 {
+        height: 25vh;
+        width: 15%;
+        background-color: white;
+        padding-top: 2%;
+        margin-top: 1%;
+        text-align: center;
+        color: rgb(34, 49, 131);
+        position: relative;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-bottom: 5%;
+
+    }
+
+    .boxs4 {
+        height: 25vh;
+        width: 15%;
+        background-color: white;
+        padding-top: 2%;
+        margin-top: 1%;
+        text-align: center;
+        position: relative;
+        color: rgb(34, 49, 131);
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-bottom: 5%;
+
+    }
+
+    .bx1 {
+        background-color: rgb(34, 49, 131);
+        height: 70vh;
+        width: 100%;
+        float: left;
+    }
+
+    .bx2 {
+        background-color: rgb(34, 49, 131);
+        height: 70vh;
+        width: 50%;
+        float: left;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .bx3 {
+        background-color: rgb(34, 49, 131);
+        height: 70vh;
+        width: 50%;
+        position: relative;
+        float: left;
+    }
+
+    .taay {
+        background-color: rgb(213, 226, 231);
+        height: 80vh;
+        width: 100%;
+        float: left;
+    }
+
+    .tat {
+        height: 3vh;
+        left: 45%;
+        right: 50%;
+        bottom: 1px;
+        width: 10.5%;
+        position: relative;
+        background-color: rgb(213, 226, 231);
+        margin-top: 2%;
+        float: left;
+        color: rgb(34, 49, 131);
+        border-bottom: 3px solid rgb(34, 49, 131);
+    }
+
+    .meenu {
+        background: rgb(213, 226, 231);
+        height: 10vh;
+        width: 30%;
+        padding-top: 20vh;
+        padding-left: 30%;
+        float: left;
+
+    }
+
+    .tbb {
+        background-color: rgb(213, 226, 231);
+        height: 45vh;
+        width: 100%;
+        float: left;
+    }
+
+    .twop {
+        background-color: rgb(34, 49, 131);
+        height: 70vh;
+        width: 100%;
+        float: left;
+
+
+    }
+
+    .ttt {
+        height: 3vh;
+        left: 45%;
+        right: 50%;
+
+        width: 11%;
+        color: white;
+        position: relative;
+        background-color: rgb(34, 49, 131);
+        padding-top: 2%;
+        float: left;
+        border-bottom: 3px solid white;
+    }
+
+    .tani {
+        padding-top: 5%;
+        float: left;
+        padding-left: 10%;
+        height: 80%;
+        background-color: rgb(34, 49, 131);
+    }
+
+
+    .ali {
+
+        float: left;
+        height: 50vh;
+    }
+
+    .al {
+
+        height: 20vh;
+        float: left;
+        width: 25%;
+        float: left;
+        margin-left: 3%;
+
+    }
+
+    .all {
+
+        height: 20vh;
+        width: 25%;
+        float: left;
+        margin-top: 5%;
+        margin-left: 3%;
+        margin-right: 10%;
+
+    }
+
+    .alina {
+        height: 30vh;
+        width: 100%;
+        background-color: rgb(213, 226, 231);
+        float: left;
+    }
+
+    .inn {
+        height: 20vh;
+        width: 15%;
+        background-color: rgb(203, 201, 201);
+        float: left;
+    }
+
+    .in {
+        height: 20vh;
+        width: 15%;
+        background-color: rgb(203, 201, 201);
+        float: left;
+
+    }
+
+    .innn {
+        height: 20vh;
+        width: 15%;
+        background-color: rgb(203, 201, 201);
+        ;
+        float: left;
+
+    }
+
+    .innnn {
+        height: 20vh;
+        width: 15%;
+        background-color: rgb(203, 201, 201);
+        float: left;
+
+    }
+
+    .hani {
+        background-color: rgb(34, 49, 131);
+        height: 80vh;
+        width: 100%;
+        float: left;
+    }
+
+    .tit {
+        height: 3vh;
+        left: 45%;
+        right: 50%;
+        background-color: rgb(34, 49, 131);
+        width: 8%;
+        color: white;
+        position: relative;
+
+        padding-top: 3%;
+        float: left;
+        border-bottom: 3px solid white;
+    }
+
+
+    .tata {
+
+        float: left;
+
+    }
+
+    .tita {
+
+        width: 100%;
+        float: left;
+
+    }
+
+    .alia {
+        margin-left: 10%;
+        float: left;
+        margin-top: 6%;
+        height: 40vh;
+        width: 30%;
+        background-color: aqua;
+
+    }
+
+    .ani {
+        background-color: rgb(203, 200, 201);
+        float: left;
+        color: white;
+        width: 45%;
+        padding-top: 3%;
+        padding-left: 3%;
+        margin-right: 4%;
+        height: 8vh;
+    }
+
+    .aii {
+        background-color: rgb(203, 200, 201);
+        float: left;
+        color: white;
+        height: 8vh;
+        width: 45%;
+        padding-top: 3%;
+        padding-left: 3%;
+    }
+
+    .ati {
+        background-color: rgb(203, 200, 201);
+        height: 20vh;
+        width: 97%;
+        color: white;
+        float: left;
+        padding-top: 3%;
+        padding-left: 3%;
+        margin-top: 4%;
+    }
+
+    .button5 {
+
+        height: 7vh;
+        color: white;
+        border: none;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 13px;
+        margin-top: 3%;
+        padding: 4%;
+        border-radius: 38px;
+        background-color: rgb(142, 220, 26);
+        position: relative;
+
+    }
+</style>
+
+<body>
+    <!--image background-->
+
+    <div class="emg">
+
+        <!--section1-->
+        <div class="box1">Meteor</div>
+
+
+        <!--section2-->
+
+        <div class="divider1">
+            <center><a>Home</a>
+                <a style="padding-left:3%">About Us</a>
+                <a style="padding-left:3%">Portfolio</a>
+                <a style="padding-left:3%">Blog</a>
+                <a style="padding-left:3%">Contact Us</a>
+            </center>
+        </div>
+        <!--section 3-->
+        <div class="box2">
+            <center><b>INTRODUCTION TO</b>
+                <h1><b>CREATIVE METEOR</b>
+                    <h1>
+                        <h3>Phaseullo interdum tortor sem. Quisque sit amet condimentum sem. Phasello</br></br>
+                            luctus,
+                            felis sit amet pulvinar luctus.</h3>
+                        <button class="button3">DISCOVER MORE</button>
+            </center>
+        </div>
+    </div>
+    <!--1portion ends-->
+
+    <!--nxtpage2-->
+    <div class="main">
+        <div class="txt"><b>WHAT WE DO</b></div>
+        <!--box1-->
+        <div class="boxs1" style="left:5%; float:left">
+            <center><img src="pnciil.png" width="15%" height="25%">
+                <h3>Easy Customization</h3>
+                <h4>Meteor is free HTML website template by Toolplate.Feel free to use this layout for your project.
+                </h4>
+            </center>
+        </div>
+        <!--box2-->
+        <div class="boxs2" style="left:6%; float:left">
+            <center><img src="bulb.png" width="18%" height="40%">
+                <h3>Creative Ideas</h3>
+                <h4>Biodiesi is free HTML website template by Toolplate.Feel free to use this layout for your
+                    project.
+                </h4>
+            </center>
+        </div>
+        <!--box3-->
+        <div class="boxs3" style="left:7%; float:left">
+            <center><img src="dlr.png" width="20%" height="30%">
+                <h3>Good Profit</h3>
+                <h4>Meteor is free HTML website template by Toolplate.Feel free to use this layout for your project.
+                </h4>
+            </center>
+        </div>
+        <!--box4-->
+        <div class="boxs4" style="left:8%; float:left">
+            <center><img src="spkr.png" width="15%" height="25%">
+                <h3>Open To Public</h3>
+                <h4>Meteor is free HTML website template by Toolplate.Feel free to use this layout for your project.
+                </h4>
+            </center>
+        </div>
+    </div>
+    </div>
+    <!--nxtpage3-->
+
+    <div class="bx1">
+        <!--inner div-->
+
+        <div class="bx2">
+            <h1 style="padding-left:15%">New offers just arrived,<br>Get it now and take profit.</h1>
+            <h4 style="padding-left:15%">They usually have steep, sloping sides and sharp or rounded ridges, and a
+                high
+                point, called a peak or summit. Most geologists classify a mountain as a landform.</br></br>They
+                usually
+                have steep, sloping sides and sharp or rounded ridges, and a high point, called a peak or summit.
+                Most
+                geologists classify a mountain as a landform</h4>
+            <button class="button2">DISCOVER MORE</button>
+            <button class="button1">PURCHASE NOW</button>
+        </div>
+
+        <!--1divEnd-->
+        <!--picsdiv start-->
+        <div class="bx3">
+            <img src="ff1.jfif" width="230" height="150"
+                style="padding-left:80px; padding-top:25%;position:relative; padding-bottom:20%">
+            <img src="ff2.jfif" width="230" height="150"
+                style="left:30%;padding-top:12%; position:absolute;padding-bottom:35%">
+            <img src="ff3.jfif" width="230" height="150" style="position:absolute;padding-top:30%">
+        </div>
+        <!--bx1Ends-->
+    </div>
+    <!--bx1Ends-->
+
+    <!--picssDiv starts-->
+    <div class="taay">
+
+        <div class="tat"><b>OUR PORTFOLIO</b></div>
+        <!--menus div start-->
+
+        <div class="meenu"><a style="color: rgb(34, 49, 131)">All</a>
+            <a style="padding-left:3%">Nature</a>
+            <a style="padding-left:3%">Workspace</a>
+            <a style="padding-left:3%">City</a>
+            <a style="padding-left:3%">Technology</a>
+        </div>
+        <!--pictures Divider-->
+
+
+        <div class="tbb">
+            <img src="worksp.jfif" height="120" width="200" style="padding-left:20%">
+            <img src="city.jfif" height="120" width="200" style="padding-left:1%">
+            <img src="wor.jfif" height="120" width="200" style="padding-left:1%">
+            <img src="n4.jfif" height="120" width="200" style="padding-left:1%"><br>
+            <img src="techn.jfif" height="120" width="200" style="padding-left:20%; padding-top:1%">
+            <img src="tec.jfif" height="120" width="200" style="padding-left:1%">
+            <img src="n7.jfif" height="120" width="200" style="padding-left:1%">
+            <img src="cit.jfif" height="120" width="200" style="padding-left:1%">
+        </div>
+        <!--div1 page end-->
+    </div>
+
+    <!--page2 starts-->
+    <div class="twop">
+        <div class="ttt"><b>OUR BLOG POSTS</b></div>
+        <!--picsDivider1-->
+        <div class="tani">
+            <div class="ali"><img src="fr.jfif" height="285" width="350" style="padding-left:0%">
+            </div>
+            <div class="al"><img src="gg.jfif" height="140" width="360"></div>
+            <br>
+            <div class="all"><img src="sc.jfif" height="125" width="360"></div>
+        </div>
+    </div>
+
+    <!--grwy4 Div start-->
+    <div class="alina">
+        <div class="inn" style="margin-top:2%;margin-left:20%">
+            <center>
+                <p style="color:green">926</p>
+                <p>REGULAR VISITORS</p>
+            </center>
+        </div>
+        <div class="in" style="margin-left:1%;margin-top:2%">
+            <center>
+                <p style="color:green">214</p>
+                <p>FINISHED PROJECTS</p>
+            </center>
+        </div>
+        <div class="innn" style="margin-left:1%;margin-top:2%">
+            <center>
+                <p style="color:green">118</p>
+                <p>HAPPY CLIENTS</p>
+            </center>
+        </div>
+        <div class="innnn" style="margin-left:1%;margin-top:2%">
+            <center>
+                <p style="color:green">16</p>
+                <p>TOTAL AWARDS</p>
+            </center>
+        </div>
+    </div>
+
+    <!--div end-->
+    <!--nxt div starts-->
+    <div class="hani">
+
+        <div class="tit"><b>CONTACT US</b></div><br>
+        <!--new div starts-->
+        <div class="alia">
+            <div class="tata">
+                <img src="map.jfif" width="410" height="270">
+                <div>
+                    <p style="color:white;margin-top:15%">Copyright
+                        <img src="icon.png" height="2%" width="3%">2017
+                        Company Name -Design:Tooplate
+                    </p>
+                </div>
+            </div>
+        </div><!--divEnds-->
+        <!--nxtdiv starts-->
+        <div class="nit" style="height:45vh;width:30%;float:left;margin-top:6%;margin-left:2%">
+            <div class="tita">
+                <div class="ani">Your name... </div>
+                <div class="aii">Your email... </div>
+                <div class="ati">Your message</div>
+                <button class="button5">SEND MESSAGE</button>
+            </div>
+        </div>
+        <!--footer div starts-->
+    </div>
+</body>
+
+</html>
