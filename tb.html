@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+<div style="margin-left:30%;margin-top:5%;">
+    <style>
+        table,
+        th,
+        td {
+            border: solid black 2px;
+            border-collapse: collapse;
+        }
+
+        td {
+            background-color: rgb(250, 250, 209);
+        }
+
+        button {
+            outline: red;
+            width: 17%;
+            text-align: center;
+            margin-left: 2%;
+        }
+    </style>
+
+    <body>
+        <table style="justify-content:center">
+            <tr>
+                <th colspan="3" style="color:white; background-color:rgb(202, 19, 138)">Cakes And Bakes Shop</th>
+            </tr>
+
+            <tr style="color:white; background-color:rgb(168, 231, 139)">
+                <th>Birthday Cakes</th>
+                <th>Price</th>
+                <th>Quantity</th>
+            </tr>
+
+
+            <tr>
+                <td>Death wish cake</td>
+                <td>200 Rs</td>
+                <td><input type="number" placeholder="0" id="text"></td>
+            </tr>
+
+            <tr>
+                <td>Starbucks cake</td>
+                <td>250 Rs</td>
+                <td><input type="number" placeholder="0" id="text1"></td>
+            </tr>
+            <tr>
+                <td>Rising sun peaberry cake</td>
+                <td>300 Rs</td>
+                <td><input type="number" placeholder="0" id="text2"></td>
+            </tr>
+
+
+            <tr>
+                <td>Lavazza super cremo cake</td>
+                <td>300 Rs </td>
+                <td><input type="number" placeholder="0" id="text3"></td>
+            </tr>
+
+            <tr>
+                <td>Rawaina cake</td>
+                <td>300 Rs </td>
+                <td><input type="number" placeholder="0" id="text4"></td>
+            </tr>
+        </table>
+        <button onclick="show()"
+            style="background-color:white;margin-top:1%;margin-left:12%;padding:0.5%;color:rgb(234, 33, 33); border:1px solid rgb(234, 33, 63)">Confirm
+            Order</button><br>
+        <button onclick="window.location.reload()" style=" background-color:white;margin-top:0.5%;;margin-left:12%;padding:0.5%;color:rgb(194, 55, 136);
+        border:1px solid rgb(222, 91, 163)">Clear
+            Order</button><br>
+        <div style="display: inline-block;background-color: #cfcc13; padding:10px;margin-left:7%; margin-top:2%;width: 210px;
+        color: #ffffff;
+        text-align: center;">Total Cost is: <output type="text" id="result"></output></div>
+
+
+        <script>
+            function show() {
+                var name = document.getElementById("text").value;
+                var name1 = document.getElementById("text1").value;
+                var name2 = document.getElementById("text2").value;
+                var name3 = document.getElementById("text3").value;
+                var name4 = document.getElementById("text4").value;
+
+                var total = name * 200 + name1 * 250 + name2 * 300 + name3 * 350 + name4 * 400;
+                document.getElementById("result").innerHTML = total;
+
+
+
+
+
+
+
+            }
+
+        </script>
+</div>
+</body>
+
+</html>
